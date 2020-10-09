@@ -29,7 +29,11 @@ public class Main extends PApplet {
 		background(0);
 		
 		fill(255);
-		//ellipse(x,y,50,50);
+		for (int i = 0; i < tcplauncher.getSessions().size(); i++) {
+			Session session = tcplauncher.getSessions().get(i);
+			fill(255);
+			ellipse(session.getJugador().getCoordenadaX(),session.getJugador().getCoordenadaY(),50,50);
+		};
 	}
 	
 	public void mensaje(Session session, String mensaje) {
@@ -37,5 +41,7 @@ public class Main extends PApplet {
 		Gson gson = new Gson();
 		Jugador jugadorReader = gson.fromJson(mensaje, Jugador.class);
 		//Aca tengo que hacer todo lo que entra en el while, pues los movimientos de los personajes...
+
+		session.setJugador(jugadorReader);
 	}
 }

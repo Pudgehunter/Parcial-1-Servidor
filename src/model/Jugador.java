@@ -49,4 +49,7 @@ public class Jugador {
 	public void setDetalles(String detalles) {
 		this.detalles = detalles;
 	}
+	
+	
+	
 }
