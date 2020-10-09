@@ -32,6 +32,7 @@ public class Main extends PApplet {
 		for (int i = 0; i < tcplauncher.getSessions().size(); i++) {
 			Session session = tcplauncher.getSessions().get(i);
 			fill(255);
+			text(session.getJugador().getNombreJugador(),session.getJugador().getCoordenadaX()-30,session.getJugador().getCoordenadaY()-30);
 			ellipse(session.getJugador().getCoordenadaX(),session.getJugador().getCoordenadaY(),50,50);
 		};
 	}

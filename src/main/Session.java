@@ -42,6 +42,7 @@ public class Session extends Thread{
 				System.out.println("Esperando mensaje...");
 				String lastMessage = reader.readLine();
 				main.mensaje(this, lastMessage);
+				
 			}
 		}catch(Exception ex) {
 			ex.printStackTrace();
