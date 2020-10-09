@@ -6,15 +6,19 @@ public class Jugador {
 	private int coordenadaX;
 	private int coordenadaY;
 	private String detalles;
+	private int r,g,b;
 	
 	//Necesario para Gson
 	public Jugador() {}
 	
-	public Jugador(String nombreJugador,int coordenadaX, int coordenadaY, String detalles) {
+	public Jugador(String nombreJugador,int coordenadaX, int coordenadaY, String detalles,int r, int g, int b) {
 		this.nombreJugador = nombreJugador;
 		this.coordenadaX = coordenadaX;
 		this.coordenadaY = coordenadaY;
 		this.detalles = detalles;
+		this.r = r;
+		this.g = g;
+		this.b = b;
 	}
 	
 	//Metodos
@@ -49,6 +53,32 @@ public class Jugador {
 	public void setDetalles(String detalles) {
 		this.detalles = detalles;
 	}
+
+	public int getR() {
+		return r;
+	}
+
+	public void setR(int r) {
+		this.r = r;
+	}
+
+	public int getG() {
+		return g;
+	}
+
+	public void setG(int g) {
+		this.g = g;
+	}
+
+	public int getB() {
+		return b;
+	}
+
+	public void setB(int b) {
+		this.b = b;
+	}
+	
+	
 	
 	
 	

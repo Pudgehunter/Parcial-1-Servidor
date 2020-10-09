@@ -21,7 +21,7 @@ public class Session extends Thread{
 	
 	public Session(Socket socket) {
 		this.socket = socket;
-		jugador = new Jugador("Nombre",0,0," ");
+		jugador = new Jugador("Nombre",0,0," ",255,255,255);
 	}
 	
 	
